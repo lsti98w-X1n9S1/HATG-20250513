@@ -9,6 +9,7 @@ class CfgFunctions
             class getDisplay {};
             class handleDisplayPosition {};
             class handleDisplayText {};
+            class hiddenStanceIndicator {};
         };
     };
 };

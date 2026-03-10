@@ -818,39 +818,90 @@
 				<Portuguese>Isso controla se a mensagem 'Oculto' pode ser exibida para ajudá-lo a saber quando você está vulnerável.</Portuguese>
 				<Turkish>Bu, 'Gizli' mesajının çizilip çizilemeyeceğini kontrol eder; bu, savunmasız olduğunuzda bilmenize yardımcı olur.</Turkish>
 			</Key>
-			<Key ID="STR_HATG_UI_Use_Image">
-				<Original>Change Text To Image</Original>
-				<English>Change Text To Image</English>
-				<Czech>Změnit text na obrázek</Czech>
-				<French>Changer le texte en image</French>
-				<German>Text in Bild ändern</German>
-				<Italian>Cambia testo in immagine</Italian>
-				<Polish>Zmień tekst na obraz</Polish>
-				<Russian>Заменить текст изображением</Russian>
-				<Spanish>Cambiar texto a imagen</Spanish>
-				<Korean>텍스트를 이미지로 변경</Korean>
-				<Japanese>テキストを画像に変更</Japanese>
-				<Chinesesimp>将文字更改为图像</Chinesesimp>
-				<Chinese>將文字更改為圖像</Chinese>
-				<Portuguese>Mudar texto para imagem</Portuguese>
-				<Turkish>Metni görsele değiştir</Turkish>
+			<Key ID="STR_HATG_UI_Mode">
+				<Original>'Hidden' status display mode</Original>
+				<English>'Hidden' status display mode</English>
+				<Czech>Režim zobrazení stavu „Skrytý“</Czech>
+				<French>Mode d'affichage de l'état « Caché »</French>
+				<German>Anzeigemodus für den Status „Verborgen“</German>
+				<Italian>Modalità di visualizzazione dello stato "Nascosto"</Italian>
+				<Polish>Tryb wyświetlania statusu „Ukryty”</Polish>
+				<Russian>Режим отображения статуса «Скрыт»</Russian>
+				<Spanish>Modo de visualización del estado «Oculto»</Spanish>
+				<Korean>'숨김' 상태 표시 모드</Korean>
+				<Japanese>「非表示」状態の表示モード</Japanese>
+				<Chinesesimp>“隐藏”状态显示模式</Chinesesimp>
+				<Chinese>「隱藏」狀態顯示模式</Chinese>
+				<Portuguese>Modo de exibição do estado "Oculto"</Portuguese>
+				<Turkish>'Gizli' durumu görüntüleme modu</Turkish>
 			</Key>
-			<Key ID="STR_HATG_UI_Use_Image_info">
-				<Original>This controls if the indicator message will instead be an image.</Original>
-				<English>This controls if the indicator message will instead be an image.</English>
-				<Czech>Toto určuje, zda bude místo textové zprávy použita obrázková zpráva.</Czech>
-				<French>Cela contrôle si le message indicateur sera une image au lieu d'un texte.</French>
-				<German>Dies steuert, ob die Anzeigennachricht stattdessen ein Bild sein wird.</German>
-				<Italian>Questo controlla se il messaggio indicatore sarà un'immagine anziché un testo.</Italian>
-				<Polish>To kontroluje, czy komunikat wskaźnika będzie obrazem zamiast tekstem.</Polish>
-				<Russian>Это контролирует, будет ли индикаторное сообщение изображением вместо текста.</Russian>
-				<Spanish>Esto controla si el mensaje indicador será una imagen en lugar de texto.</Spanish>
-				<Korean>표시 메시지를 이미지로 대체할지 여부를 제어합니다.</Korean>
-				<Japanese>これにより、指示メッセージが画像に置き換えられるかどうかを制御します。</Japanese>
-				<Chinesesimp>这控制指示消息是否将改为图像。</Chinesesimp>
-				<Chinese>這控制指示訊息是否將改為圖像。</Chinese>
-				<Portuguese>Isso controla se a mensagem do indicador será uma imagem em vez de texto.</Portuguese>
-				<Turkish>Bu, gösterge mesajının bir resim olup olmayacağını kontrol eder.</Turkish>
+			<Key ID="STR_HATG_UI_Mode_Desc">
+				<Original>This controls how the 'Hidden' message will be drawn on the screen.</Original>
+				<English>This controls how the 'Hidden' message will be drawn on the screen.</English>
+				<Czech>Toto určuje, jak bude zpráva „Skrytý“ zobrazena na obrazovce.</Czech>
+				<French>Ceci détermine comment le message « Caché » sera affiché à l'écran.</French>
+				<German>Dies legt fest, wie die Meldung „Verborgen“ auf dem Bildschirm angezeigt wird.</German>
+				<Italian>Questo controlla come il messaggio "Nascosto" verrà mostrato sullo schermo.</Italian>
+				<Polish>To określa, jak komunikat „Ukryty” będzie wyświetlany na ekranie.</Polish>
+				<Russian>Это определяет, как сообщение «Скрыт» будет отображаться на экране.</Russian>
+				<Spanish>Esto controla cómo se mostrará el mensaje «Oculto» en la pantalla.</Spanish>
+				<Korean>이 설정은 '숨김' 메시지가 화면에 어떻게 표시될지를 제어합니다.</Korean>
+				<Japanese>これは、「非表示」メッセージを画面上にどのように表示するかを設定します。</Japanese>
+				<Chinesesimp>此项控制“隐藏”消息在屏幕上的显示方式。</Chinesesimp>
+				<Chinese>此項控制「隱藏」訊息在畫面上的顯示方式。</Chinese>
+				<Portuguese>Isso controla como a mensagem "Oculto" será exibida na tela.</Portuguese>
+				<Turkish>Bu ayar, 'Gizli' mesajının ekranda nasıl gösterileceğini belirler.</Turkish>
+			</Key>
+			<Key ID="STR_HATG_UI_Use_Text">
+				<Original>Use text to display 'Hidden' status</Original>
+				<English>Use text to display 'Hidden' status</English>
+				<Czech>Použít text pro zobrazení stavu „Skrytý“</Czech>
+				<French>Utiliser du texte pour afficher l'état « Caché »</French>
+				<German>Text verwenden, um den Status „Verborgen“ anzuzeigen</German>
+				<Italian>Usa il testo per visualizzare lo stato "Nascosto"</Italian>
+				<Polish>Użyj tekstu do wyświetlania statusu „Ukryty”</Polish>
+				<Russian>Использовать текст для отображения статуса «Скрыт»</Russian>
+				<Spanish>Usar texto para mostrar el estado «Oculto»</Spanish>
+				<Korean>'숨김' 상태를 표시하는 데 텍스트 사용</Korean>
+				<Japanese>「非表示」状態の表示にテキストを使用</Japanese>
+				<Chinesesimp>使用文本显示“隐藏”状态</Chinesesimp>
+				<Chinese>使用文字顯示「隱藏」狀態</Chinese>
+				<Portuguese>Usar texto para exibir o estado "Oculto"</Portuguese>
+				<Turkish>'Gizli' durumunu göstermek için metin kullan</Turkish>
+			</Key>
+			<Key ID="STR_HATG_UI_Use_Image">
+				<Original>Use image to display 'Hidden' status</Original>
+				<English>Use image to display 'Hidden' status</English>
+				<Czech>Použít obrázek pro zobrazení stavu „Skrytý“</Czech>
+				<French>Utiliser une image pour afficher l'état « Caché »</French>
+				<German>Bild verwenden, um den Status „Verborgen“ anzuzeigen</German>
+				<Italian>Usa un'immagine per visualizzare lo stato "Nascosto"</Italian>
+				<Polish>Użyj obrazu do wyświetlania statusu „Ukryty”</Polish>
+				<Russian>Использовать изображение для отображения статуса «Скрыт»</Russian>
+				<Spanish>Usar una imagen para mostrar el estado «Oculto»</Spanish>
+				<Korean>'숨김' 상태를 표시하는 데 이미지 사용</Korean>
+				<Japanese>「非表示」状態の表示に画像を使用</Japanese>
+				<Chinesesimp>使用图像显示“隐藏”状态</Chinesesimp>
+				<Chinese>使用圖片顯示「隱藏」狀態</Chinese>
+				<Portuguese>Usar imagem para exibir o estado "Oculto"</Portuguese>
+				<Turkish>'Gizli' durumunu göstermek için görsel kullan</Turkish>
+			</Key>
+			<Key ID="STR_HATG_UI_Use_Stance">
+				<Original>Use stance indicator to display 'Hidden' status</Original>
+				<English>Use stance indicator to display 'Hidden' status</English>
+				<Czech>Použít ukazatel postoje pro zobrazení stavu „Skrytý“</Czech>
+				<French>Utiliser l'indicateur de posture pour afficher l'état « Caché »</French>
+				<German>Haltungsanzeige verwenden, um den Status „Verborgen“ anzuzeigen</German>
+				<Italian>Usa l'indicatore di postura per visualizzare lo stato "Nascosto"</Italian>
+				<Polish>Użyj wskaźnika postawy do wyświetlania statusu „Ukryty”</Polish>
+				<Russian>Использовать индикатор стойки для отображения статуса «Скрыт»</Russian>
+				<Spanish>Usar el indicador de postura para mostrar el estado «Oculto»</Spanish>
+				<Korean>'숨김' 상태를 표시하는 데 자세 표시기 사용</Korean>
+				<Japanese>「非表示」状態の表示に姿勢インジケーターを使用</Japanese>
+				<Chinesesimp>使用姿态指示器显示“隐藏”状态</Chinesesimp>
+				<Chinese>使用姿態指示器顯示「隱藏」狀態</Chinese>
+				<Portuguese>Usar o indicador de postura para exibir o estado "Oculto"</Portuguese>
+				<Turkish>'Gizli' durumunu göstermek için duruş göstergesini kullan</Turkish>
 			</Key>
 			<Key ID="STR_HATG_UI_Enable_Fading">
 				<Original>Enable UI Fading</Original>

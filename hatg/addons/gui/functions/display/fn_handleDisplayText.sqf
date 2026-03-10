@@ -34,13 +34,35 @@ if (["hatg_mirror", ObjNull, _unit] call HATG_fnc_getVariable isNotEqualTo ObjNu
     _displayImage = QPATHTOFOLDER(data\ui\hidden_ca.paa);
 };
 
+private _colourRGBA = _colour;
 _colour = (_colour call BIS_fnc_colorRGBAtoHTML);
 
 private _hiddenText = "";
-if (hatg_setting_ui_use_image) then {
-    _hiddenText = format ["<img align='center' shadow='0' color='%3' size='%1' image='%2' /><br />", _textSize * 2, _displayImage, _colour];
-} else {
-    _hiddenText = format ["<t shadow='1' font ='%3' align = 'center' size='%2' color='%1'>" + _statusText + "</t>", _colour, _textSize, hatg_setting_ui_font];
+
+switch (hatg_setting_ui_mode) do {
+    case "Text": {
+        _hiddenText = format [
+            "<t shadow='1' font='%3' align='center' size='%2' color='%1'>%4</t>",
+            _colour,
+            _textSize,
+            hatg_setting_ui_font,
+            _statusText
+        ];
+    };
+    case "Image": {
+        _hiddenText = format [
+            "<img align='center' shadow='0' color='%3' size='%1' image='%2' /><br />",
+            _textSize * 2,
+            _displayImage,
+            _colour
+        ];
+    };
+    case "Stance Indicator": {
+        [_colourRGBA, true] call HATG_fnc_hiddenStanceIndicator;
+    };
+    default {
+        _hiddenText = "";
+    };
 };
 
 _displayHidden ctrlSetStructuredText (parseText _hiddenText);

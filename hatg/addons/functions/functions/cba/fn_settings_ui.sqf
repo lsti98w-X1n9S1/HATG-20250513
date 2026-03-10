@@ -14,16 +14,24 @@
     }
 ] call CBA_fnc_addSetting;
 
+private _uiOptions = ["Text", "Image", "Stance Indicator"];
+private _uiOptionsInfo = [
+    "$STR_HATG_UI_Use_Text",
+    "$STR_HATG_UI_Use_Image",
+    "$STR_HATG_UI_Use_Stance"
+];
+
 [
-    "hatg_setting_ui_use_image",
-    "CHECKBOX",
-    ["$STR_HATG_UI_Use_Image", "$STR_HATG_UI_Use_Image_info"],
+    "hatg_setting_ui_mode",
+    "LIST",
+    ["$STR_HATG_UI_Mode", "$STR_HATG_UI_Mode_Desc"],
     SETTING_HEADER_UI,
+    [_uiOptions, _uiOptionsInfo, 0],
     true,
-    0,
     {
         [player] call HATG_fnc_handleDisplayText;
-    }
+    },
+    false
 ] call CBA_fnc_addSetting;
 
 [
