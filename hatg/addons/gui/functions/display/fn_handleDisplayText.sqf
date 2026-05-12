@@ -28,7 +28,15 @@ if (_mirrorToggled) then {
     _displayImage = QPATHTOFOLDER(data\ui\disabled_ca.paa);
 };
 
-if (["hatg_mirror", ObjNull, _unit] call HATG_fnc_getVariable isNotEqualTo ObjNull) then {
+//if (["hatg_mirror", ObjNull, _unit] call HATG_fnc_getVariable isNotEqualTo ObjNull) then {
+//    _colour = _displayColourHidden;
+//    _statusText = localize "$STR_HATG_Hidden";
+//    _displayImage = QPATHTOFOLDER(data\ui\hidden_ca.paa);
+//};
+
+// 以下是修改内容
+// The following is the modified content
+if ((_unit getVariable ["hatg_mirror_visible", false]) && {!(isNull (_unit getVariable ["hatg_mirror", objNull]))}) then {
     _colour = _displayColourHidden;
     _statusText = localize "$STR_HATG_Hidden";
     _displayImage = QPATHTOFOLDER(data\ui\hidden_ca.paa);
