@@ -36,18 +36,13 @@ if (_unit isEqualTo ObjNull) exitWith {false};
 private _mirror = [_unit] call HATG_fnc_getMirror;
 
 
-// mirror 已存在 → 直接显示并退出，不重复创建
-// hidden by default after creation, wait for conditions to be met before displaying
 if !(isNull _mirror) exitWith {
     _mirror hideObject false;
-    _mirror hideObjectGlobal false;
     _unit setVariable ["hatg_mirror_visible", true, true];
     if (isPlayer _unit) then { [_unit] call HATG_fnc_handleDisplayText; };
     _mirror
 };
 
-// mirror 不存在 → 创建
-// hidden by default after creation, wait for conditions to be met before displaying
 [format["Creating a mirror for %1 (ATL: %2)", name _unit, getPosATL _unit], 1, _fnc_scriptName] call HATG_fnc_log;
 
 private _mirrorType = "";
@@ -65,10 +60,7 @@ private _mirror = _mirrorType createVehicle [0,0,0];
 _mirror setPosATL getPosATL _unit;
 _mirror attachTo [_unit, _mirrorCoords];
 
-// 创建后默认隐藏，等待条件满足再显示
-// hidden by default after creation, wait for conditions to be met before displaying
 _mirror hideObject true;
-_mirror hideObjectGlobal true;
 
 _unit setVariable ["hatg_mirror", _mirror, true];
 _unit setVariable ["hatg_mirror_visible", false, true]; 
